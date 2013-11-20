@@ -1,120 +1,205 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home - Cheeseburger Vacation</title>
-        <?php require_once 'include/head.php' ?>
-    </head>
-    <body id="homePage">
-        <?php require_once 'include/social.php' ?>
-        <?php require_once 'include/header.php' ?>
-        
-        <aside>
-            <section id="info">
-                <div class="inn">
-                    <h2>Server IP: <span>cheeseburgervacation.com</span></h2>
-                    
-                    <h4>Help support our server by donating.</h4>
-                    <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-                        ">
-                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                    </form>
-                </div>
-            </section>
-            
-            <section id="featured">
-                <div class="inn">
-                    <h2>Featured Screenshot:</h2>
-                    <h3>Carrot Farm</h3>
-                    <a class="fancybox" href="<?php echo Config::$baseUrl; ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm.png"><img src="<?php echo Config::$baseUrl; ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm_preview.jpg" /></a>
-                    <p>By: <span>hukt0nf0nikz</span></p>
-                    <a href="gallery.php">See more in the gallery</a>
-                </div>
-            </section>
-            
-            <section id="moreInfo">
-                <div class="inn">
-                    <h2>Description:</h2>
-                    <p>Cheeseburger vacation is a (mostly) survival server where you can relax and have fun. The server has run continuously since September 2010 under the leadership of bwl (and recently haveric)</p>
-                    
-                    <h2>Rules:</h2>
-                    <ul>
-                        <li>All actions are logged. Do not steal, destroy, or grief.</li>
-                        <li>Easiest way to get banned is to pour lava on someone's house. This is not a pvp server.</li>
-                        <li>Please handle yourself as an adult in your interactions with others.</li>
-                        <li>Pestering people for powers is positively perturbing and patently preposterous, please.</li>
-                        <li>Try to keep language PG and avoid creating lewd structures.</li>
-                        <li>Have fun!</li>
-                    </ul>
-                </div>
-            </section>
-            
-            <section id="currentPlayers">
-                <div class="inn">
-                    <?php 
-                        require __DIR__ . '/scripts/MinecraftQuery.class.php';
-                        
-                        $Query = new MinecraftQuery();
-                        
-                        try {
-                            $Query->Connect(Config::$serverUrl, 25565);
-                            
-                            $serverInfo = $Query->GetInfo();
-                            $players = $serverInfo["Players"];
-                            $maxPlayers = $serverInfo["MaxPlayers"];
-                            $playerList = $Query->GetPlayers();
-                            
-                            
-                            echo "<h2>Playing right now ($players/$maxPlayers): </h2>"; 
-                            if ($players > 0) {
-                                foreach($playerList as $player) {
-                                    echo "<div class=\"img-wrap\"><img src=\"https://minotar.net/helm/" . $player . "/130\" title=\"{$player}\" ><span>$player</span></div>";
-                                }
-                            } else {
-                                echo "Nobody :(";
-                            }
-                        } catch(MinecraftQueryException $e) {
-                            echo "Error loading player information: " . $e->getMessage();
-                        }
-                    ?>
-                </div>
-            </section>
-        </aside>
-        
-        <section id="news">
-            <div class="inn">
-                <article>
-                    <h1>Better Late than Never</h1>
-                    <p class="date">9/28/2013</p>
-                    <p>The winner to the long awaited screenshot labor day contest is <em>hukt0nf0nikz</em>. Congratulations! Your screenshot is now featured in the sidebar. All screenshots from the contest can be found in the <a href="gallery.php">gallery</a>.</p></p>                    
-                    <p>The <a href="maps.php">maps</a> page has also been updated with new images. You can thank CrewmanInRed for most of them.</p>
-                </article>
-                <article>
-                    <h1>Website Updates and Screenshot Contest</h1>
-                    <p class="date">9/2/2013</p>
-                    <p>Map downloads have been updated and can be found in the shiny new nav above here.</p>
-                    <p>There is a new screenshot contest running until the end of the week (Friday). More details can be found here: <a href="http://redd.it/1lk4p4">http://redd.it/1lk4p4</a></p>
-                </article>
-                <article>
-                    <h1>Screenshot Saturday Results Are In</h1>
-                    <p class="date">8/7/2013</p>
-                    <p>We had a small turnout, but I announced the contest fairly late and not too many people knew about it.  We'll be doing more of these in the future so save up some of your best screenshots for the next one.</p>
-                    <p>The winner for the very first Screenshot Saturday is Sanchezenia! Your screenshot will be featured in the sidebar for the next couple weeks.  All of the screenshots can be viewed in the <a href="gallery.php">gallery</a>.</p>
-                </article>
-                <article>
-                    <h1>New Website</h1>
-                    <p class="date">8/7/2013</p>
-                    <p>It's about time for a fresh look to the cheeseburger vacation website, so here we are. Mobile styles still need improvement and I may be moving some things around.</p>
-                    <p>Image gallery can be found <a href="gallery.php">here</a>.</p>
-                    <p>Let me know what you think on <a href="http://www.reddit.com/r/cheeseburgervacation">Reddit</a> or <a href="https://twitter.com/CVacation">Twitter</a>.</p>
-                </article>
-            </div>
-        </section>
-        
-        <?php require_once 'include/footer.php' ?>
-        <?php require_once 'include/scripts.php' ?>
-        <script type="text/javascript" src="js/application/pages/home.js"></script>
-    </body>
-</html>
+<?php
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ *
+ */
+	define('ENVIRONMENT', 'development');
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
+	{
+		case 'development':
+			error_reporting(E_ALL);
+		break;
+	
+		case 'testing':
+		case 'production':
+			error_reporting(0);
+		break;
+
+		default:
+			exit('The application environment is not set correctly.');
+	}
+}
+
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same  directory
+ * as this file.
+ *
+ */
+	$system_path = 'system';
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder then the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server.  If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ *
+ */
+	$application_folder = 'application';
+
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here.  For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT:  If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller.  Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ *
+ */
+	// The directory name, relative to the "controllers" folder.  Leave blank
+	// if your controller is not in a sub-folder within the "controllers" folder
+	// $routing['directory'] = '';
+
+	// The controller class file name.  Example:  Mycontroller
+	// $routing['controller'] = '';
+
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ *
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
+
+
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
+
+	if (realpath($system_path) !== FALSE)
+	{
+		$system_path = realpath($system_path).'/';
+	}
+
+	// ensure there's a trailing slash
+	$system_path = rtrim($system_path, '/').'/';
+
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+	}
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// The PHP file extension
+	// this global constant is deprecated.
+	define('EXT', '.php');
+
+	// Path to the system folder
+	define('BASEPATH', str_replace("\\", "/", $system_path));
+
+	// Path to the front controller (this file)
+	define('FCPATH', str_replace(SELF, '', __FILE__));
+
+	// Name of the "system folder"
+	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+
+	// The path to the "application" folder
+	if (is_dir($application_folder))
+	{
+		define('APPPATH', $application_folder.'/');
+	}
+	else
+	{
+		if ( ! is_dir(BASEPATH.$application_folder.'/'))
+		{
+			exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+		}
+
+		define('APPPATH', BASEPATH.$application_folder.'/');
+	}
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
+
+/* End of file index.php */
+/* Location: ./index.php */
