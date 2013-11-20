@@ -1,0 +1,75 @@
+#mapsPage {
+    
+    #mapGallery {
+    
+        .inn {
+            .clearfix;
+        }
+        
+        h1 {
+            margin: 0;
+            border-bottom: 2px solid #000;
+        }
+        
+        .map {
+            .clearfix;
+            width: 32%;
+            float: left;
+            margin-left: 2%;
+            
+            &:nth-child(3n+2) {
+                margin-left: 0;
+                clear: both;
+            }
+            
+            h2 {
+                margin-bottom: 0;
+            }
+            
+            p {
+            
+            }
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .downloads {
+                background: rgba(0,0,0,.5);
+                
+                .inn {
+                    .clearfix;
+                }
+                
+                h3 {
+                    margin-top: 0;
+                    color: #ccc;
+                }
+            }
+            
+            a[href^="https://www.dropbox.com"] {
+                float: right;
+                padding-top: 11px;
+                
+                i {
+                    background: url(@{baseUrl}img/dropboxLogo.png) left top no-repeat;
+                    width: 135px;
+                    height: 34px;
+                    display: inline-block;
+                }
+            }
+            
+            a[href^="http://adf.ly"] {
+                float: left;
+                
+                i {
+                    background: url(@{baseUrl}img/adflyLogo.png) left top no-repeat;
+                    width: 93px;
+                    height: 45px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

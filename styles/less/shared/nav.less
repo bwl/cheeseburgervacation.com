@@ -1,0 +1,65 @@
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        .clearfix;
+    }
+    
+    li {
+        background: #111;
+        float: left;
+        text-align: center;
+        border: 1px solid #888;
+        border-bottom: 0;
+        height: 40px;
+        .transition(all 0.5s ease);
+        border-radius: 5px 5px 0 0;
+        
+        & + li {
+            margin-left: 15px;
+        }
+        
+        &:hover,
+        &.active {
+            background: #222;
+            
+            a {
+                color: #fff;
+            }
+        }
+        
+        &.active {
+            border-color: #067ecd;
+        }
+    }
+    
+    i {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 4px 10px 0 0;
+    }
+    
+    .navGallery {
+        i {
+            background: url(@{baseUrl}img/icons/gallery.png) left top no-repeat;
+        }
+    }
+    
+    .navMaps {
+        i {
+            background: url(@{baseUrl}img/icons/map.png) left top no-repeat;
+        }
+    }
+    
+    a {
+        display: block;
+        line-height: 40px;
+        color: #ccc;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0 15px;
+    }
+}

@@ -1,0 +1,81 @@
+a {
+    color: #067ECD;
+}
+
+#content {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 200px;
+    position: relative;
+    .clearfix;
+    
+    & > .inn {
+        width: 960px;
+        padding: 0;
+        margin-bottom: 100px;
+        float: right;
+        .clearfix;
+        
+        @media screen and (max-width: 980px) {
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 1140px) {
+        width: 960px;
+    }
+    
+    @media screen and (max-width: 980px) {
+        width: 98%;
+    }
+}
+
+
+#logotext {
+    font-size: 48px;
+    font-weight: 100;
+    margin: 0;
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    margin-left: -140px;
+    color: white;
+    
+    span.lighter {
+        color:black;
+    }
+    
+    @media screen and (max-width: 1140px) {
+        line-height: 55px;
+        top: 80px;
+    }
+    
+    @media screen and (max-width: 980px) {
+        left: 480px; 
+    }
+}
+#logo-wrap {
+    z-index: 10;
+}
+
+section {
+    background: #fff;
+    z-index: 20;
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -580px;
+    width: 480px;
+    height: 240px;
+    
+    @media screen and (max-width: 1140px) {
+        margin-left: 0;
+        top: 10px;
+        width: 360px;
+        height: 180px;
+        left: 0;
+    }
+}

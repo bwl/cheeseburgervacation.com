@@ -1,0 +1,72 @@
+{
+    "enchantments": {
+        "levels": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V"
+        },
+        "names": {
+            "0": "Protection",
+            "1": "Fire Protection",
+            "2": "Feather Falling",
+            "3": "Blast Protection",
+            "4": "Projectile Protection",
+            "5": "Respiration",
+            "6": "Aqua Affinity",
+            "7": "Thorns",
+            "16": "Sharpness",
+            "17": "Smite",
+            "18": "Bane of Arthropods",
+            "19": "Knockback",
+            "20": "Fire Aspect",
+            "21": "Looting",
+            "32": "Efficiency",
+            "33": "Silk Touch",
+            "34": "Unbreaking",
+            "35": "Fortune",
+            "48": "Power",
+            "49": "Punch",
+            "50": "Flame",
+            "51": "Infinity",
+            "61": "Luck of the Sea",
+            "62": "Lure"
+        }
+    },
+    "stats": {
+        "general": {
+            "animalsBred": "Animals Bred",
+            "boatOneCm": "Distance by Boat",
+            "climbOneCm": "Distance Climbed",
+            "damageDealt": "Damage Dealt",
+            "damageTaken": "Damage Taken",
+            "diveOneCm": "Distance Dove",
+            "leaveGame": "Games quit",
+            "deaths": "Number of Deaths",
+            "drop": "Items Dropped",
+            "fallOneCm": "Distance Fallen",
+            "fishCaught": "Fish Caught",
+            "flyOneCm": "Distance Flown",
+            "horseOneCm": "Distance by Horse",
+            "jump": "Jumps",
+            "leaveGame": "Games quit",
+            "minecraftOneCm": "Distance by Minecart",
+            "mobKills": "Mob Kills",
+            "pigOneCm": "Distance by Pig",
+            "playerKills": "Player Kills",
+            "playOneMinute": "Time Played / Idled",
+            "swimOneCm": "Distance Swum",
+            "walkOneCm": "Distance Walked",
+            "minecartOneCm": "Distance by Minecart",
+            "treasureFished": "Treasure Fished",
+            "junkFished": "Junk Fished"
+        },
+        "mobs": {
+            "CaveSpider": "Cave Spider",
+            "LavaSlime": "Magma Cube",
+            "MushroomCow": "Mooshroom",
+            "PigZombie": "Zombie Pigman"
+        }
+    }
+}
