@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Players - Cheeseburger Vacation</title>
-        <?php require_once 'include/head.php' ?>
-    </head>
-    <body id="mapsPage">
-        <?php require_once 'include/social.php' ?>
-        <?php require_once 'include/header.php' ?>
-        
         <section id="players">
+
+
+            <?php echo heading($player_name,2)?>
+
             <div class="inn">
             
                 <div id="inventory">
@@ -165,9 +159,5 @@
             </div>
         </section>
         
-        <?php require_once 'include/footer.php' ?>
-        <?php require_once 'include/scripts.php' ?>
-        <script type="text/javascript" src="js/application/shared/common.js"></script>
-        <script type="text/javascript" src="js/application/shared/profile.js"></script>
-    </body>
-</html>
+        <script type="text/javascript" src="<?=site_url('asset/js/application/shared/common.js')?>"></script>
+        <script type="text/javascript" src="<?=site_url('asset/js/application/shared/profile.js')?>"></script>
