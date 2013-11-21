@@ -159,5 +159,5 @@
             </div>
         </section>
         
-        <script type="text/javascript" src="<?=site_url('asset/js/application/shared/common.js')?>"></script>
-        <script type="text/javascript" src="<?=site_url('asset/js/application/shared/profile.js')?>"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>asset/js/application/shared/common.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>asset/js/application/shared/profile.js"></script>
