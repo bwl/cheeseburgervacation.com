@@ -2,12 +2,40 @@
 <html>
     <head>
         <title>Home - Cheeseburger Vacation</title>
-        <?php require_once 'include/head.php' ?>
+        <link rel="stylesheet" href="<?=site_url('asset/styles/css/main.css')?>">
     </head>
     <body id="homePage">
-        <?php require_once 'include/social.php' ?>
-        <?php require_once 'include/header.php' ?>
-        
+
+
+<div class="social">
+    <a href="https://twitter.com/cvacation" class="twitter-follow-button">Follow @cvacation</a>
+    <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+    <br />
+    <a href="http://reddit.com/r/cheeseburgervacation">
+        <img src="asset/img/cv-reddit-logo.png" width="120" height="40" alt="Reddit" />
+    </a>
+</div>
+
+
+<div id="content">
+    <a id="logo-wrap" href="<?php echo base_url(); ?>"><img id="logo" src="asset/img/cv-logo-big.png" alt="Cv Logo Big"></a>
+    <h1 id="logotext"><span class="lighter">CHEESEBURGER</span> VACATION</h1>
+    
+    <div class="inn">
+
+    <nav>
+    <ul>
+        <li class="navHome">
+            <a href="<?php echo base_url(); ?>">Home</a>
+        </li>
+        <li class="navGallery">
+            <a href="<?php echo site_url('gallery'); ?>"><i></i>Gallery</a>
+        </li>
+        <li class="navMaps">
+            <a href="<?php echo site_url('maps'); ?>"><i></i>Maps</a>
+        </li>
+    </ul>
+    </nav>        
         <aside>
             <section id="info">
                 <div class="inn">
@@ -28,9 +56,9 @@
                 <div class="inn">
                     <h2>Featured Screenshot:</h2>
                     <h3>Carrot Farm</h3>
-                    <a class="fancybox" href="<?php echo Config::$baseUrl; ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm.png"><img src="<?php echo Config::$baseUrl; ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm_preview.jpg" /></a>
+                    <a class="fancybox" href="<?php echo base_url(); ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm.png"><img src="<?php echo base_url(); ?>asset/img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm_preview.jpg" /></a>
                     <p>By: <span>hukt0nf0nikz</span></p>
-                    <a href="gallery.php">See more in the gallery</a>
+                    <a href="<?=site_url('gallery')?>">See more in the gallery</a>
                 </div>
             </section>
             
@@ -54,30 +82,29 @@
             <section id="currentPlayers">
                 <div class="inn">
                     <?php 
-                        require __DIR__ . '/scripts/MinecraftQuery.class.php';
+                        // require __DIR__ . '/scripts/MinecraftQuery.class.php';
+                        // $Query = new MinecraftQuery();
                         
-                        $Query = new MinecraftQuery();
-                        
-                        try {
-                            $Query->Connect(Config::$serverUrl, 25565);
+                        // try {
+                        //     $Query->Connect(Config::$serverUrl, 25565);
                             
-                            $serverInfo = $Query->GetInfo();
-                            $players = $serverInfo["Players"];
-                            $maxPlayers = $serverInfo["MaxPlayers"];
-                            $playerList = $Query->GetPlayers();
+                        //     $serverInfo = $Query->GetInfo();
+                        //     $players = $serverInfo["Players"];
+                        //     $maxPlayers = $serverInfo["MaxPlayers"];
+                        //     $playerList = $Query->GetPlayers();
                             
                             
-                            echo "<h2>Playing right now ($players/$maxPlayers): </h2>"; 
-                            if ($players > 0) {
-                                foreach($playerList as $player) {
-                                    echo "<div class=\"img-wrap\"><img src=\"https://minotar.net/helm/" . $player . "/130\" title=\"{$player}\" ><span>$player</span></div>";
-                                }
-                            } else {
-                                echo "Nobody :(";
-                            }
-                        } catch(MinecraftQueryException $e) {
-                            echo "Error loading player information: " . $e->getMessage();
-                        }
+                        //     echo "<h2>Playing right now ($players/$maxPlayers): </h2>"; 
+                        //     if ($players > 0) {
+                        //         foreach($playerList as $player) {
+                        //             echo "<div class=\"img-wrap\"><img src=\"https://minotar.net/helm/" . $player . "/130\" title=\"{$player}\" ><span>$player</span></div>";
+                        //         }
+                        //     } else {
+                        //         echo "Nobody :(";
+                        //     }
+                        // } catch(MinecraftQueryException $e) {
+                        //     echo "Error loading player information: " . $e->getMessage();
+                        // }
                     ?>
                 </div>
             </section>
@@ -112,9 +139,26 @@
                 </article>
             </div>
         </section>
+        </div>
+    </div>
+
+        <script type="text/javascript" src="<?=site_url('asset/js/vendor/jquery-1.10.2.min.js')?>"></script>
+        <script type="text/javascript" src="<?=site_url('asset/js/vendor/bootstrap/tab.js')?>"></script>
+        <script type="text/javascript" src="<?=site_url('asset/js/vendor/bootstrap/tooltip.js')?>"></script>
+        <script type="text/javascript" src="<?=site_url('asset/js/vendor/plugins/jquery.fancybox.pack.js')?>"></script>
         
-        <?php require_once 'include/footer.php' ?>
-        <?php require_once 'include/scripts.php' ?>
-        <script type="text/javascript" src="js/application/pages/home.js"></script>
+        <script>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-24371812-1']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-        analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+        <script type="text/javascript" src="<?=site_url('asset/js/application/pages/home.js')?>"></script>
     </body>
 </html>
