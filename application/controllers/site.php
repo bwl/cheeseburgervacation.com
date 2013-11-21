@@ -2,10 +2,20 @@
 
 class Site extends CI_Controller {
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->helper('url');
+        $this->load->helper('html');
+        $this->data['page_id'] = 'homePage';
+        $this->data = [];
+    }
+
 	public function index()
 	{
-        $this->load->helper('url');
-		$this->load->view('template');
+        $this->data['content'] = $this->load->view('pages/home', $this->data, True);
+        $this->data['sidebar'] = $this->load->view('sidebar', $this->data, True);
+		$this->load->view('template', $this->data);
 	}
 
     public function gallery()
