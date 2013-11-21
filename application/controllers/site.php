@@ -8,20 +8,19 @@ class Site extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('html');
         $this->data['page_id'] = 'homePage';
-        $this->data = [];
+        $this->data = array();
     }
 
 	public function index()
 	{
         $this->data['content'] = $this->load->view('pages/home', $this->data, True);
-        $this->data['sidebar'] = $this->load->view('sidebar', $this->data, True);
+        $this->data['page_id'] = 'homePage';
 		$this->load->view('template', $this->data);
 	}
 
     public function gallery()
     {
         $this->data['content'] = $this->load->view('pages/gallery', $this->data, True);
-        $this->data['sidebar'] = False;
         $this->data['page_id'] = 'galleryPage';
         $this->load->view('template', $this->data);
     }
@@ -29,7 +28,6 @@ class Site extends CI_Controller {
     public function maps()
     {
         $this->data['content'] = $this->load->view('pages/maps', $this->data, True);
-        $this->data['sidebar'] = False;
         $this->data['page_id'] = 'mapsPage';
         $this->load->view('template', $this->data);
     }
@@ -38,7 +36,6 @@ class Site extends CI_Controller {
     {
         $this->data['player_name'] = $player_name;
         $this->data['content'] = $this->load->view('pages/player', $this->data, True);
-        $this->data['sidebar'] = False;
         $this->load->view('template', $this->data);
     }
 

@@ -20,7 +20,7 @@
                     <h3>Carrot Farm</h3>
                     <a class="fancybox" href="<?php echo base_url(); ?>img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm.png"><img src="<?php echo base_url(); ?>asset/img/gallery/sss_labor_day/hukt0nf0nikz/carrotFarm_preview.jpg" /></a>
                     <p>By: <span>hukt0nf0nikz</span></p>
-                    <a href="<?=site_url('gallery')?>">See more in the gallery</a>
+                    <a href="<?php echo base_url(); ?>gallery">See more in the gallery</a>
                 </div>
             </section>
             
