@@ -35,6 +35,7 @@ class Site extends CI_Controller {
     public function player($player_name)
     {
         $this->data['player_name'] = $player_name;
+        $this->data['page_id'] = 'playerPage';
         $this->data['content'] = $this->load->view('pages/player', $this->data, True);
         $this->load->view('template', $this->data);
     }
