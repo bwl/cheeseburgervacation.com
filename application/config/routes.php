@@ -39,6 +39,9 @@
 */
 
 $route['default_controller'] = "site";
+$route['gallery'] = "site/gallery";
+$route['maps'] = "site/maps";
+$route['player/(:any)'] = "site/player/$1";
 $route['404_override'] = '';
 
 
