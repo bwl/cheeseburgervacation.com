@@ -966,9 +966,11 @@ textarea {
 .clearfix:after {
   clear: both;
 }
-html,
-body {
+html {
   height: 100%;
+}
+body {
+  min-height: 100%;
 }
 a {
   color: #067ECD;
