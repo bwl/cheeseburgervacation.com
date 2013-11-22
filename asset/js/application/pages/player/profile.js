@@ -1,23 +1,4 @@
-function getURLParam(strParamName) {
-    var strReturn = "";
-    var strHref = window.location.href;
-    if ( strHref.indexOf("?") > -1 ) {
-        var strQueryString = strHref.substr(strHref.indexOf("?")).toLowerCase();
-        var aQueryString = strQueryString.split("&");
-        for ( var iParam = 0; iParam < aQueryString.length; iParam++ ) {
-            if (aQueryString[iParam].indexOf(strParamName.toLowerCase() + "=") > -1 ) {
-                var aParam = aQueryString[iParam].split("=");
-                strReturn = aParam[1];
-                break;
-            }
-        }
-    }
-    return unescape(strReturn);
-}
-
 function get_user_name() {
-    return getURLParam(name);
-/*
     var user;
     var url = document.URL;
     var username = url.substring(url.lastIndexOf("/") + 1, url.length).toLowerCase();
@@ -25,8 +6,8 @@ function get_user_name() {
     if (hashindex > 0) {
         username = username.substring(0, username.lastIndexOf("#"));
     };
+    console.log("Username: " + username);
     return username;
-*/
 }
 
 function initialize_datatables() {

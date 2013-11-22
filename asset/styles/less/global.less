@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100%;
+}
+
 a {
     color: #067ECD;
 }
@@ -78,4 +83,25 @@ section {
         height: 180px;
         left: 0;
     }
+}
+
+
+@font-face {
+    font-family: 'minecraftfont';
+
+    src: url('../../fonts/minecraftfont.eot'),
+         url('../../fonts/minecraftfont.woff') format('woff'),
+         url('../../fonts/minecraftfont.ttf') format('truetype');
+}
+
+.fontMC() {
+    font-family: 'minecraftfont';
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+.fontMCShadow() {
+    .fontMC;
+    text-shadow: 2px 2px 0px #373737;
+    filter: dropshadow(color=#373737, offx=2, offy=2);
 }

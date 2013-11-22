@@ -1,6 +1,6 @@
-var stringJsonUrl = '/json/strings.json';
-var itemJsonUrl = '/json/items.json';
-var achievementsJsonUrl = '/json/achievements.json';
+var stringJsonUrl = '<?php echo base_url(); ?>json/strings.json';
+var itemJsonUrl = '<?php echo base_url(); ?>json/items.json';
+var achievementsJsonUrl = '<?php echo base_url(); ?>json/achievements.json';
 var peopleJsonUrl = '/json/people.json';
 var statusJsonUrl = '/assets/serverstatus/status.json';
 var moneysJsonUrl = '/assets/serverstatus/moneys.json';
@@ -8,7 +8,7 @@ var moneysJsonUrl = '/assets/serverstatus/moneys.json';
 var apiUrl = 'cheeseburgervacation.com:8080';
 
 function Person (person_data) {
-    // Propertys set themselves when instantiated
+    // Properties set themselves when instantiated
     this.id = person_data['id'];
     this.description = person_data['description'];
     this.irc = person_data['irc'];
@@ -65,7 +65,7 @@ var API = {
     ajaxJSONDeferred: function(url) {
         return $.ajax(url, {
             type: 'GET',
-            dataType: 'jsonp'
+            dataType: 'json'
         }).then(function(ajaxData) {
             // Strips out all the extra data we don't need
             return ajaxData;
