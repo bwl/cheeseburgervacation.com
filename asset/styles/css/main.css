@@ -991,7 +991,7 @@ a {
 #content:after {
   clear: both;
 }
-#content  > .inn {
+#content > .inn {
   width: 960px;
   padding: 0;
   margin-bottom: 100px;
@@ -999,16 +999,16 @@ a {
   *zoom: 1;
   zoom: 1;
 }
-#content  > .inn:before,
-#content  > .inn:after {
+#content > .inn:before,
+#content > .inn:after {
   content: " ";
   display: table;
 }
-#content  > .inn:after {
+#content > .inn:after {
   clear: both;
 }
 @media screen and (max-width: 980px) {
-  #content  > .inn {
+  #content > .inn {
     width: 100%;
   }
 }
@@ -1430,6 +1430,9 @@ img.podlink {
   height: 45px;
   display: block;
 }
+#players {
+  background: #C6C6C6;
+}
 .inventory {
   *zoom: 1;
   zoom: 1;
@@ -1450,7 +1453,10 @@ img.podlink {
   background: #1b0c1b;
   *zoom: 1;
   zoom: 1;
-  border-radius: 2px;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  z-index: 100;
 }
 .inventory #itemTooltip:before,
 .inventory #itemTooltip:after {
@@ -1460,8 +1466,18 @@ img.podlink {
 .inventory #itemTooltip:after {
   clear: both;
 }
-.inventory #itemTooltip .inn {
+.inventory #itemTooltip > .inn {
   padding: 5px;
+  *zoom: 1;
+  zoom: 1;
+}
+.inventory #itemTooltip > .inn:before,
+.inventory #itemTooltip > .inn:after {
+  content: " ";
+  display: table;
+}
+.inventory #itemTooltip > .inn:after {
+  clear: both;
 }
 .inventory #itemTooltip .line {
   float: left;
@@ -1512,7 +1528,7 @@ img.podlink {
 .inventory #armorSlots .cell {
   clear: both;
   float: none;
-  background: #8b8b8b url('pages/pages/../../../img/mcapi/armor.png') left top no-repeat;
+  background: #8b8b8b url('pages/pages/../../../../img/mcapi/armor.png') left top no-repeat;
 }
 .inventory #armorSlots .cell:hover {
   background-color: #c5c5c5;

@@ -5,9 +5,7 @@
     <div class="inn">
         <?php echo heading($player_name,2)?>
         
-        <div id="playerInventory" class="inventory">
-            
-        </div>
+        <?php $this->load->view('include/mcInventory'); ?>
         
     </div>
 </section>
