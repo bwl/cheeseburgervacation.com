@@ -966,6 +966,12 @@ textarea {
 .clearfix:after {
   clear: both;
 }
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 a {
   color: #067ECD;
 }
@@ -985,7 +991,7 @@ a {
 #content:after {
   clear: both;
 }
-#content  > .inn {
+#content > .inn {
   width: 960px;
   padding: 0;
   margin-bottom: 100px;
@@ -993,16 +999,16 @@ a {
   *zoom: 1;
   zoom: 1;
 }
-#content  > .inn:before,
-#content  > .inn:after {
+#content > .inn:before,
+#content > .inn:after {
   content: " ";
   display: table;
 }
-#content  > .inn:after {
+#content > .inn:after {
   clear: both;
 }
 @media screen and (max-width: 980px) {
-  #content  > .inn {
+  #content > .inn {
     width: 100%;
   }
 }
@@ -1063,6 +1069,10 @@ section {
     height: 180px;
     left: 0;
   }
+}
+@font-face {
+  font-family: 'minecraftfont';
+  src: url('../../fonts/minecraftfont.eot'), url('../../fonts/minecraftfont.woff') format('woff'), url('../../fonts/minecraftfont.ttf') format('truetype');
 }
 nav ul {
   margin: 0;
@@ -1127,72 +1137,6 @@ nav a {
   font-size: 20px;
   text-transform: uppercase;
   padding: 0 15px;
-}
-#username {
-  vertical-align: middle;
-  line-height: 32px;
-}
-#people-list {
-  vertical-align: middle;
-  line-height: 16px;
-}
-.avatar {
-  margin-right: 0.5em;
-}
-#avatar {
-  float: left;
-  margin-right: 1em;
-  display: inline-block;
-  height: 32px;
-}
-#head {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-#user-description {
-  font-size: normal;
-}
-.panel-heading {
-  display: block;
-}
-.inventory-opt-out {
-  display: none;
-}
-.inventory-opt-in {
-  display: inline-block;
-  margin-right: 29px;
-}
-.inv-cell {
-  background-color: #8b8b8b;
-  padding: 0;
-}
-.inv-cell > div.inv-cell-style > span.count {
-  bottom: 0;
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  right: 0;
-}
-.inv-cell > div.inv-cell-style {
-  border-color: #373737;
-  border-style: solid none none solid;
-  border-width: 2px;
-  height: 34px;
-  margin: 0 2px 2px 0;
-  position: relative;
-}
-.inv-cell > div.inv-cell-style > div {
-  border-color: white;
-  border-style: none solid solid none;
-  border-width: 2px;
-  box-sizing: content-box;
-  height: 32px;
-  margin: 0 -2px -2px 0;
-  min-width: 32px;
-}
-.inv-cell > div.inv-cell-style > div > img {
-  bottom: 1px;
-  position: relative;
 }
 body {
   font-family: Helvetica Neue, Helvetica, Arial;
@@ -1485,4 +1429,143 @@ img.podlink {
   width: 93px;
   height: 45px;
   display: block;
+}
+#players {
+  background: #C6C6C6;
+}
+.inventory {
+  *zoom: 1;
+  zoom: 1;
+  background: #c6c6c6;
+}
+.inventory:before,
+.inventory:after {
+  content: " ";
+  display: table;
+}
+.inventory:after {
+  clear: both;
+}
+.inventory #itemTooltip {
+  border: 2px solid #1f004a;
+  border: 2px solid rgba(31, 0, 74, 0.9);
+  background: rgba(27, 0, 27, 0.9);
+  background: #1b0c1b;
+  *zoom: 1;
+  zoom: 1;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+.inventory #itemTooltip:before,
+.inventory #itemTooltip:after {
+  content: " ";
+  display: table;
+}
+.inventory #itemTooltip:after {
+  clear: both;
+}
+.inventory #itemTooltip > .inn {
+  padding: 5px;
+  *zoom: 1;
+  zoom: 1;
+}
+.inventory #itemTooltip > .inn:before,
+.inventory #itemTooltip > .inn:after {
+  content: " ";
+  display: table;
+}
+.inventory #itemTooltip > .inn:after {
+  clear: both;
+}
+.inventory #itemTooltip .line {
+  float: left;
+  clear: both;
+  color: #fff;
+  height: 20px;
+  font-family: 'minecraftfont';
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  text-shadow: 2px 2px 0px #373737;
+  filter: dropshadow(color=#373737, offx=2, offy=2);
+  font-size: 16px;
+  line-height: 16px;
+}
+.inventory #itemTooltip .line.bonus {
+  color: #55f;
+}
+.inventory h1 {
+  margin: 0 0 5px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'minecraftfont';
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+}
+.inventory .row {
+  clear: both;
+}
+.inventory .cell {
+  background-color: #8b8b8b;
+  float: left;
+  width: 32px;
+  height: 32px;
+  border-left: 2px solid #373737;
+  border-top: 2px solid #373737;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: relative;
+}
+.inventory .cell:hover {
+  background-color: #c5c5c5;
+}
+.inventory #armorSlots {
+  float: left;
+  margin-right: 50px;
+}
+.inventory #armorSlots .cell {
+  clear: both;
+  float: none;
+  background: #8b8b8b url('pages/pages/../../../../img/mcapi/armor.png') left top no-repeat;
+}
+.inventory #armorSlots .cell:hover {
+  background-color: #c5c5c5;
+}
+.inventory #armorSlots .helmet {
+  background-position: 0 0;
+}
+.inventory #armorSlots .chestplate {
+  background-position: -32px 0;
+}
+.inventory #armorSlots .leggings {
+  background-position: -64px 0;
+}
+.inventory #armorSlots .boots {
+  background-position: -96px 0;
+}
+.inventory #mainInventorySlots {
+  float: left;
+  margin-right: 50px;
+}
+.inventory #enderChestSlots {
+  float: left;
+}
+.inventory .amount {
+  position: absolute;
+  bottom: 0px;
+  right: -2px;
+  color: #fff;
+  font-family: 'minecraftfont';
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  text-shadow: 2px 2px 0px #373737;
+  filter: dropshadow(color=#373737, offx=2, offy=2);
+  font-size: 16px;
+  line-height: 16px;
+}
+.inventory .hotbarSeparator {
+  height: 8px;
+  background: #c6c6c6;
 }
