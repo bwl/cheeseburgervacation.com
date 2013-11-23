@@ -68,8 +68,6 @@ html {
   /* 3 */
 
   -webkit-text-size-adjust: 100%;
-  /* 4 */
-
   -ms-text-size-adjust: 100%;
   /* 4 */
 
@@ -351,8 +349,6 @@ textarea {
   /* 2 */
 
   vertical-align: baseline;
-  /* 3 */
-
   *vertical-align: middle;
   /* 3 */
 
@@ -420,8 +416,6 @@ input[type="radio"] {
   /* 2 */
 
   *height: 13px;
-  /* 3 */
-
   *width: 13px;
   /* 3 */
 
@@ -778,7 +772,7 @@ textarea {
 .fancybox-close,
 .fancybox-prev span,
 .fancybox-next span {
-  background-image: url('fancybox/fancybox/../../img/fancybox/fancybox_sprite.png');
+  background-image: url('../../img/fancybox/fancybox_sprite.png');
 }
 #fancybox-loading {
   position: fixed;
@@ -794,7 +788,7 @@ textarea {
 #fancybox-loading div {
   width: 44px;
   height: 44px;
-  background: url('fancybox/fancybox/../../img/fancybox/fancybox_loading.gif') center center no-repeat;
+  background: url('../../img/fancybox/fancybox_loading.gif') center center no-repeat;
 }
 .fancybox-close {
   position: absolute;
@@ -812,7 +806,7 @@ textarea {
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  background: transparent url('fancybox/fancybox/../../img/fancybox/blank.gif');
+  background: transparent url('../../img/fancybox/blank.gif');
   /* helps IE */
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -872,7 +866,7 @@ textarea {
   overflow: hidden;
   display: none;
   z-index: 8010;
-  background: url('fancybox/fancybox/../../img/fancybox/fancybox_overlay.png');
+  background: url('../../img/fancybox/fancybox_overlay.png');
 }
 .fancybox-overlay-fixed {
   position: fixed;
@@ -942,13 +936,13 @@ textarea {
   .fancybox-close,
   .fancybox-prev span,
   .fancybox-next span {
-    background-image: url('fancybox/fancybox/../../img/fancybox/fancybox_sprite@2x.png');
+    background-image: url('../../img/fancybox/fancybox_sprite@2x.png');
     background-size: 44px 152px;
     /*The size of the normal image, half the size of the hi-res image*/
   
   }
   #fancybox-loading div {
-    background-image: url('fancybox/fancybox/../../img/fancybox/fancybox_loading@2x.gif');
+    background-image: url('../../img/fancybox/fancybox_loading@2x.gif');
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/
   
@@ -1102,7 +1096,7 @@ nav li {
   transition: all 0.5s ease;
   border-radius: 5px 5px 0 0;
 }
-nav li  + li {
+nav li + li {
   margin-left: 15px;
 }
 nav li:hover,
@@ -1124,10 +1118,10 @@ nav i {
   margin: 4px 10px 0 0;
 }
 nav .navGallery i {
-  background: url('shared/shared/../../../../img/icons/gallery.png') left top no-repeat;
+  background: url('../../img/icons/gallery.png') left top no-repeat;
 }
 nav .navMaps i {
-  background: url('shared/shared/../../../../img/icons/map.png') left top no-repeat;
+  background: url('../../img/icons/map.png') left top no-repeat;
 }
 nav a {
   display: block;
@@ -1151,16 +1145,16 @@ a {
   padding: 15px;
   position: relative;
 }
-#currentPlayers  > .inn {
+#currentPlayers > .inn {
   *zoom: 1;
   zoom: 1;
 }
-#currentPlayers  > .inn:before,
-#currentPlayers  > .inn:after {
+#currentPlayers > .inn:before,
+#currentPlayers > .inn:after {
   content: " ";
   display: table;
 }
-#currentPlayers  > .inn:after {
+#currentPlayers > .inn:after {
   clear: both;
 }
 #currentPlayers .img-wrap {
@@ -1416,7 +1410,7 @@ img.podlink {
   padding-top: 11px;
 }
 #mapsPage #mapGallery .map a[href^="https://www.dropbox.com"] i {
-  background: url(pages/pages/../../../../img/dropboxLogo.png) left top no-repeat;
+  background: url(../../img/dropboxLogo.png) left top no-repeat;
   width: 135px;
   height: 34px;
   display: inline-block;
@@ -1425,7 +1419,7 @@ img.podlink {
   float: left;
 }
 #mapsPage #mapGallery .map a[href^="http://adf.ly"] i {
-  background: url(pages/pages/../../../../img/adflyLogo.png) left top no-repeat;
+  background: url(../../img/adflyLogo.png) left top no-repeat;
   width: 93px;
   height: 45px;
   display: block;
@@ -1528,7 +1522,7 @@ img.podlink {
 .inventory #armorSlots .cell {
   clear: both;
   float: none;
-  background: #8b8b8b url('pages/pages/../../../../img/mcapi/armor.png') left top no-repeat;
+  background: #8b8b8b url('../../img/mcapi/armor.png') left top no-repeat;
 }
 .inventory #armorSlots .cell:hover {
   background-color: #c5c5c5;
