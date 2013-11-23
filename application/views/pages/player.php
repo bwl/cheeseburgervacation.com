@@ -6,6 +6,8 @@
         <?php echo heading($player_name,2)?>
         
         <?php $this->load->view('include/mcInventory'); ?>
+
+        <?php echo var_dump($player); ?>
         
     </div>
 </section>
