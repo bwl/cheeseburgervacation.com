@@ -2,6 +2,65 @@
     background: #C6C6C6;
 }
 
+.healthMeter {
+    .clearfix;
+    
+    .health {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px 0;
+        width: 18px;
+        height: 18px;
+        float: left;
+        
+        
+    }
+    
+    .health-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -104px 0;
+        }
+        
+        &.half {
+            background-position: -122px 0;
+        }
+    }
+}
+
+
+.hungerMeter {
+    .clearfix;
+    
+    .hunger {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px -54px;
+        width: 18px;
+        height: 18px;
+        float: left;
+        
+        
+    }
+    
+    .hunger-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -104px -54px;
+        }
+        
+        &.half {
+            background-position: -122px -54px;
+        }
+    }
+}
+
 .inventory {
     .clearfix;
     background: #c6c6c6;
