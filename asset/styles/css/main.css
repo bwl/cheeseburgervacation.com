@@ -1434,9 +1434,23 @@ img.podlink {
 #players {
   background: #C6C6C6;
 }
+.playerMeters {
+  width: 364px;
+  *zoom: 1;
+  zoom: 1;
+}
+.playerMeters:before,
+.playerMeters:after {
+  content: " ";
+  display: table;
+}
+.playerMeters:after {
+  clear: both;
+}
 .healthMeter {
   *zoom: 1;
   zoom: 1;
+  float: left;
 }
 .healthMeter:before,
 .healthMeter:after {
@@ -1452,6 +1466,7 @@ img.podlink {
   width: 18px;
   height: 18px;
   float: left;
+  margin-right: -2px;
 }
 .healthMeter .health-inn {
   background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
@@ -1468,6 +1483,7 @@ img.podlink {
 .hungerMeter {
   *zoom: 1;
   zoom: 1;
+  float: right;
 }
 .hungerMeter:before,
 .hungerMeter:after {
@@ -1483,6 +1499,7 @@ img.podlink {
   width: 18px;
   height: 18px;
   float: left;
+  margin-left: -2px;
 }
 .hungerMeter .hunger-inn {
   background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
@@ -1495,6 +1512,32 @@ img.podlink {
 }
 .hungerMeter .hunger-inn.half {
   background-position: -122px -54px;
+}
+.xpMeter {
+  background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
+  background-position: 0 -128px;
+  width: 364px;
+  height: 10px;
+  float: left;
+  margin-top: 2px;
+  position: relative;
+}
+.xpMeter .xpMeter-inn {
+  background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
+  background-position: 0 -138px;
+  width: 364px;
+  height: 10px;
+}
+.xpMeter .xpLevel {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  margin-left: -6px;
+  font-family: 'minecraftfont';
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  color: #80ff20;
+  text-shadow: -2px 0 0 #000000, 2px 0 0 #000000, 0 -2px 0 #000000, 0 2px 0 #000000;
 }
 .inventory {
   *zoom: 1;

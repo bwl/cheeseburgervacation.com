@@ -104,8 +104,8 @@ section {
     -webkit-font-smoothing : none;
 }
 
-.textShadow(@color) {
-    text-shadow: 2px 2px 0px @color;
+.textShadow(@color, @xOff: 2px, @yOff:2px) {
+    text-shadow: @xOff @yOff 0px @color;
 }
 
 .fontMCShadow() {
