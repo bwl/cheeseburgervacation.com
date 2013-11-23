@@ -2021,83 +2021,103 @@
     },
     "298": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/24/Grid_Leather_Cap.png",
-        "name": "Leather Cap"
+        "name": "Leather Cap",
+        "armor": 1
     },
     "299": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ed/Grid_Leather_Tunic.png",
-        "name": "Leather Tunic"
+        "name": "Leather Tunic",
+        "armor": 3
     },
     "300": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/ce/Grid_Leather_Pants.png",
-        "name": "Leather Pants"
+        "name": "Leather Pants",
+        "armor": 2
     },
     "301": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/06/Grid_Leather_Boots.png",
-        "name": "Leather Boots"
+        "name": "Leather Boots",
+        "armor": 1
     },
     "302": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/c/cf/Grid_Chain_Armor_Helmet.png",
-        "name": "Chain Helmet"
+        "name": "Chain Helmet",
+        "armor": 2
     },
     "303": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f4/Grid_Chain_Armor_Chestplate.png",
-        "name": "Chain Chestplate"
+        "name": "Chain Chestplate",
+        "armor": 5
     },
     "304": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/1/1b/Grid_Chain_Armor_Leggings.png",
-        "name": "Chain Leggings"
+        "name": "Chain Leggings",
+        "armor": 4
     },
     "305": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/74/Grid_Chain_Armor_Boots.png",
-        "name": "Chain Boots"
+        "name": "Chain Boots",
+        "armor": 1
     },
     "306": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/ec/Grid_Iron_Helmet.png",
-        "name": "Iron Helmet"
+        "name": "Iron Helmet",
+        "armor": 2
     },
     "307": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/8d/Grid_Iron_Chestplate.png",
-        "name": "Iron Chestplate"
+        "name": "Iron Chestplate",
+        "armor": 6
     },
     "308": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/99/Grid_Iron_Leggings.png",
-        "name": "Iron Leggings"
+        "name": "Iron Leggings",
+        "armor": 5
     },
     "309": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f5/Grid_Iron_Boots.png",
         "name": "Iron Boots"
+        "armor": 2
     },
     "310": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/b/bd/Grid_Diamond_Helmet.png",
-        "name": "Diamond Helmet"
+        "name": "Diamond Helmet",
+        "armor": 3
     },
     "311": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e7/Grid_Diamond_Chestplate.png",
-        "name": "Diamond Chestplate"
+        "name": "Diamond Chestplate",
+        "armor": 8
     },
     "312": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/e/e3/Grid_Diamond_Leggings.png",
-        "name": "Diamond Leggings"
+        "name": "Diamond Leggings",
+        "armor": 6
     },
     "313": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/d/d1/Grid_Diamond_Boots.png",
-        "name": "Diamond Boots"
+        "name": "Diamond Boots",
+        "armor": 3
     },
     "314": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/3/3a/Grid_Gold_Helmet.png",
-        "name": "Golden Helmet"
+        "name": "Golden Helmet",
+        "armor": 2
     },
     "315": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/7/7b/Grid_Gold_Chestplate.png",
-        "name": "Golden Chestplate"
+        "name": "Golden Chestplate",
+        "armor": 5
     },
     "316": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/f/f5/Grid_Gold_Leggings.png",
-        "name": "Golden Leggings"
+        "name": "Golden Leggings",
+        "armor": 3
     },
     "317": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/0/00/Grid_Gold_Boots.png",
-        "name": "Golden Boots"
+        "name": "Golden Boots",
+        "armor": 1
     },
     "318": {
         "image": "http://hydra-media.cursecdn.com/minecraft.gamepedia.com/8/82/Grid_Flint.png",

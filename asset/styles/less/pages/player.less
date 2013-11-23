@@ -2,6 +2,130 @@
     background: #C6C6C6;
 }
 
+
+.playerMeters {
+    width: 364px;
+    .clearfix;
+}
+
+.absorptionMeter {
+    .clearfix;
+    
+    .absorption {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px 0;
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: -2px;
+    }
+    
+    .absorption-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -320px 0;
+        }
+        
+        &.half {
+            background-position: -338px 0;
+        }
+    }
+}
+
+.healthMeter {
+    .clearfix;
+    float: left;
+    
+    .health {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px 0;
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: -2px;
+    }
+    
+    .health-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -104px 0;
+        }
+        
+        &.half {
+            background-position: -122px 0;
+        }
+    }
+}
+
+
+.hungerMeter {
+    .clearfix;
+    float: right;
+    
+    .hunger {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px -54px;
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-left: -2px;
+    }
+    
+    .hunger-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -104px -54px;
+        }
+        
+        &.half {
+            background-position: -122px -54px;
+        }
+    }
+}
+
+.xpMeter {
+    background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+    background-position: 0 -128px;
+    width: 364px;
+    height: 10px;
+    float: left;
+    margin-top: 2px;
+    position: relative;
+    
+    .xpMeter-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: 0 -138px;
+        width: 364px;
+        height: 10px;
+    }
+    
+    .xpLevel {
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        margin-left: -6px;
+        .fontMC;
+        color: #80ff20;
+        
+        text-shadow: -2px 0 0 #000, 
+                      2px 0 0 #000,
+                      0 -2px 0 #000,
+                      0 2px 0 #000;
+    }
+}
+
 .inventory {
     .clearfix;
     background: #c6c6c6;
