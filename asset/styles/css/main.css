@@ -1494,13 +1494,39 @@ img.podlink {
   font-size: 16px;
   line-height: 16px;
 }
-.inventory #itemTooltip .line.goldenApple {
+.inventory #itemTooltip .line.description,
+.inventory #itemTooltip .line.time,
+.inventory #itemTooltip .line.enchantment {
+  color: #aaa;
+  text-shadow: 2px 2px 0px #2a2a2a;
+}
+.inventory #itemTooltip .line.bonus {
+  color: #55f;
+  text-shadow: 2px 2px 0px #15153f;
+}
+.inventory #itemTooltip .line.negative {
+  color: #f55;
+  text-shadow: 2px 2px 0px #3f1515;
+}
+.inventory #itemTooltip .line.rare,
+.inventory #itemTooltip .line.enchanted {
   color: #5ff;
   text-shadow: 2px 2px 0px #153f3f;
 }
 .inventory #itemTooltip .line.enchantedApple {
   color: #f5f;
   text-shadow: 2px 2px 0px #e3f153 f;
+}
+.inventory #itemTooltip .line.potionApply {
+  color: #a0a;
+  text-shadow: 2px 2px 0px #2a002a;
+}
+.inventory #itemTooltip .line.enchantedBook {
+  color: #ff5;
+  text-shadow: 2px 2px 0px #3f3f15;
+}
+.inventory #itemTooltip .line.customName {
+  font-style: italic;
 }
 .inventory h1 {
   margin: 0 0 5px;
@@ -1527,6 +1553,9 @@ img.podlink {
 }
 .inventory .cell:hover {
   background-color: #c5c5c5;
+}
+.inventory .cell .detail {
+  display: none;
 }
 .inventory #armorSlots {
   float: left;
