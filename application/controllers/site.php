@@ -8,9 +8,9 @@ class Site extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('html');
         $this->load->helper('debug');
+        $this->data = array();
         $this->data['page_id'] = 'homePage';
         $this->data['page_title'] = '';
-        $this->data = array();
     }
 
     public function index()
@@ -18,6 +18,28 @@ class Site extends CI_Controller {
         $this->data['content'] = $this->load->view('pages/home', $this->data, True);
         $this->data['page_title'] = 'Home';
         $this->data['page_id'] = 'homePage';
+        $this->load->view('template', $this->data);
+    }
+
+    public function server()
+    {
+        $this->load->library('MinecraftQuery');
+        $server = new MinecraftQuery( );
+        $content = "";
+        try
+        {
+            $server->Connect( 'cheeseburgervacation.com', 25565 );
+            $content .= heading('GetInfo',2);
+            $content .= var_chart( $server->GetInfo() );
+            $content .= heading('GetPlayers',2);
+            $content .= var_chart( $server->GetPlayers() );
+        }
+        catch( MinecraftQueryException $e )
+        {
+            echo $e->getMessage( );
+        }
+        $this->data['page_content'] = $content;
+        $this->data['content'] = $this->load->view('pages/blank', $this->data, True);
         $this->load->view('template', $this->data);
     }
 
