@@ -5,7 +5,30 @@
     <div class="inn">
         <?php echo heading($player_name,2)?>
 
+        <?php echo $player->Health; ?>
+        
         <div class="playerMeters">
+            <?php 
+                $absorption = $player->AbsorptionAmount;
+                if ($absorption > 0) {
+                    echo '<div class="absorptionMeter">';
+                    
+                    for ($i=2; $i <= $absorption; $i +=2) {
+                        $absorptionClass = '';
+                        if ($absorption >= $i) {
+                            $absorptionClass = 'full';
+                        } else if ($absorption == $i - 1) {
+                            $absorptionClass = 'half';
+                        }
+                        echo '
+                        <div class="absorption">
+                            <div class="absorption-inn '.$absorptionClass.'"></div>
+                        </div>';
+                    }
+                    
+                    echo '</div>';
+                }
+            ?>
             <div class="healthMeter">
                 <?php 
                     $health = $player->Health;

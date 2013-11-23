@@ -1447,6 +1447,38 @@ img.podlink {
 .playerMeters:after {
   clear: both;
 }
+.absorptionMeter {
+  *zoom: 1;
+  zoom: 1;
+}
+.absorptionMeter:before,
+.absorptionMeter:after {
+  content: " ";
+  display: table;
+}
+.absorptionMeter:after {
+  clear: both;
+}
+.absorptionMeter .absorption {
+  background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
+  background-position: -32px 0;
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: -2px;
+}
+.absorptionMeter .absorption-inn {
+  background: url('pages/pages/../../../../img/mcapi/icons2x.png') left top no-repeat;
+  background-position: -300px -54px;
+  width: 18px;
+  height: 18px;
+}
+.absorptionMeter .absorption-inn.full {
+  background-position: -320px 0;
+}
+.absorptionMeter .absorption-inn.half {
+  background-position: -338px 0;
+}
 .healthMeter {
   *zoom: 1;
   zoom: 1;

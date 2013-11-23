@@ -8,6 +8,34 @@
     .clearfix;
 }
 
+.absorptionMeter {
+    .clearfix;
+    
+    .absorption {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -32px 0;
+        width: 18px;
+        height: 18px;
+        float: left;
+        margin-right: -2px;
+    }
+    
+    .absorption-inn {
+        background: url('../../../../img/mcapi/icons2x.png') left top no-repeat;
+        background-position: -300px -54px;
+        width: 18px;
+        height: 18px;
+        
+        &.full {
+            background-position: -320px 0;
+        }
+        
+        &.half {
+            background-position: -338px 0;
+        }
+    }
+}
+
 .healthMeter {
     .clearfix;
     float: left;
