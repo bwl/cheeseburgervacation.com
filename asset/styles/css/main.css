@@ -1072,7 +1072,8 @@ section {
 }
 @font-face {
   font-family: 'minecraftfont';
-  src: url('../../fonts/minecraftfont.eot'), url('../../fonts/minecraftfont.woff') format('woff'), url('../../fonts/minecraftfont.ttf') format('truetype');
+  src: url('../../fonts/minecraftfont.eot');
+  src: url('../../fonts/minecraftfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/minecraftfont.woff') format('woff'), url('../../fonts/minecraftfont.ttf') format('truetype');
 }
 nav ul {
   margin: 0;
@@ -1490,19 +1491,16 @@ img.podlink {
   font-smooth: never;
   -webkit-font-smoothing: none;
   text-shadow: 2px 2px 0px #373737;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
   font-size: 16px;
   line-height: 16px;
 }
 .inventory #itemTooltip .line.goldenApple {
   color: #5ff;
   text-shadow: 2px 2px 0px #153f3f;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
 }
 .inventory #itemTooltip .line.enchantedApple {
   color: #f5f;
   text-shadow: 2px 2px 0px #e3f153 f;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
 }
 .inventory h1 {
   margin: 0 0 5px;
@@ -1570,7 +1568,6 @@ img.podlink {
   font-smooth: never;
   -webkit-font-smoothing: none;
   text-shadow: 2px 2px 0px #373737;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
   font-size: 16px;
   line-height: 16px;
   cursor: default;

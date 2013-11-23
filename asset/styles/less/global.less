@@ -92,7 +92,8 @@ section {
 @font-face {
     font-family: 'minecraftfont';
 
-    src: url('../../fonts/minecraftfont.eot'),
+    src: url('../../fonts/minecraftfont.eot');
+    src: url('../../fonts/minecraftfont.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/minecraftfont.woff') format('woff'),
          url('../../fonts/minecraftfont.ttf') format('truetype');
 }
@@ -105,7 +106,6 @@ section {
 
 .textShadow(@color) {
     text-shadow: 2px 2px 0px @color;
-    filter: dropshadow(color=@color, offx=2, offy=2);
 }
 
 .fontMCShadow() {
