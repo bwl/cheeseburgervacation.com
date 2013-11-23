@@ -1072,7 +1072,8 @@ section {
 }
 @font-face {
   font-family: 'minecraftfont';
-  src: url('../../fonts/minecraftfont.eot'), url('../../fonts/minecraftfont.woff') format('woff'), url('../../fonts/minecraftfont.ttf') format('truetype');
+  src: url('../../fonts/minecraftfont.eot');
+  src: url('../../fonts/minecraftfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/minecraftfont.woff') format('woff'), url('../../fonts/minecraftfont.ttf') format('truetype');
 }
 nav ul {
   margin: 0;
@@ -1447,10 +1448,10 @@ img.podlink {
   clear: both;
 }
 .inventory #itemTooltip {
-  border: 2px solid #1f004a;
-  border: 2px solid rgba(31, 0, 74, 0.9);
-  background: rgba(27, 0, 27, 0.9);
-  background: #1b0c1b;
+  border: 2px solid #1e0f1e;
+  border: 2px solid rgba(16, 0, 16, 0.941);
+  background: #1e0f1e;
+  background: rgba(16, 0, 16, 0.941);
   *zoom: 1;
   zoom: 1;
   border-radius: 3px;
@@ -1470,6 +1471,8 @@ img.podlink {
   padding: 5px;
   *zoom: 1;
   zoom: 1;
+  border: 2px solid #1e0f1e;
+  border: 2px solid rgba(37, 0, 95, 0.961);
 }
 .inventory #itemTooltip > .inn:before,
 .inventory #itemTooltip > .inn:after {
@@ -1488,12 +1491,42 @@ img.podlink {
   font-smooth: never;
   -webkit-font-smoothing: none;
   text-shadow: 2px 2px 0px #373737;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
   font-size: 16px;
   line-height: 16px;
 }
+.inventory #itemTooltip .line.description,
+.inventory #itemTooltip .line.time,
+.inventory #itemTooltip .line.enchantment {
+  color: #aaa;
+  text-shadow: 2px 2px 0px #2a2a2a;
+}
 .inventory #itemTooltip .line.bonus {
   color: #55f;
+  text-shadow: 2px 2px 0px #15153f;
+}
+.inventory #itemTooltip .line.negative {
+  color: #f55;
+  text-shadow: 2px 2px 0px #3f1515;
+}
+.inventory #itemTooltip .line.rare,
+.inventory #itemTooltip .line.enchanted {
+  color: #5ff;
+  text-shadow: 2px 2px 0px #153f3f;
+}
+.inventory #itemTooltip .line.enchantedApple {
+  color: #f5f;
+  text-shadow: 2px 2px 0px #e3f153 f;
+}
+.inventory #itemTooltip .line.potionApply {
+  color: #a0a;
+  text-shadow: 2px 2px 0px #2a002a;
+}
+.inventory #itemTooltip .line.enchantedBook {
+  color: #ff5;
+  text-shadow: 2px 2px 0px #3f3f15;
+}
+.inventory #itemTooltip .line.customName {
+  font-style: italic;
 }
 .inventory h1 {
   margin: 0 0 5px;
@@ -1520,6 +1553,9 @@ img.podlink {
 }
 .inventory .cell:hover {
   background-color: #c5c5c5;
+}
+.inventory .cell .detail {
+  display: none;
 }
 .inventory #armorSlots {
   float: left;
@@ -1561,9 +1597,9 @@ img.podlink {
   font-smooth: never;
   -webkit-font-smoothing: none;
   text-shadow: 2px 2px 0px #373737;
-  filter: dropshadow(color=#373737, offx=2, offy=2);
   font-size: 16px;
   line-height: 16px;
+  cursor: default;
 }
 .inventory .hotbarSeparator {
   height: 8px;

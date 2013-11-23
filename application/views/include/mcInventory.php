@@ -30,20 +30,34 @@
             <h1>Inventory</h1>
             <div class="row">
                 <div class="cell">
-                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Block_of_Emerald.png" />
-                    <span class="amount">64</span>
+                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4e/Grid_Golden_Apple.png" />
+                    <span class="amount"></span>
+                    <div class="detail">
+                        <span class="line title rare">Golden Apple</span>
+                    </div>
                 </div>
                 <div class="cell">
-                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/58/Grid_Minecart.png" />
-                    <span class="amount">64</span>
+                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/4/4e/Grid_Golden_Apple.png" />
+                    <span class="amount"></span>
+                    <div class="detail">
+                        <span class="line title enchantedApple">Golden Apple</span>
+                    </div>
                 </div>
                 <div class="cell">
-                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Block_of_Emerald.png" />
-                    <span class="amount">64</span>
+                    
+                    <span class="amount"></span>
+                    <div class="detail"></div>
                 </div>
                 <div class="cell">
-                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/5/58/Grid_Minecart.png" />
-                    <span class="amount">64</span>
+                    <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/9/97/Grid_Water_Bottle.png" />
+                    <span class="amount"></span>
+                    <div class="detail">
+                        <span class="line title">Potion of Swiftness</span>
+                        <span class="line time">Speed (3:00)</span>
+                        <span class="line empty"></span>
+                        <span class="line potionApply">When Applied:</span>
+                        <span class="line bonus">+20% Speed</span>
+                    </div>
                 </div>
                 <div class="cell">
                     <img src="http://hydra-media.cursecdn.com/minecraft.gamepedia.com/2/27/Grid_Block_of_Emerald.png" />
