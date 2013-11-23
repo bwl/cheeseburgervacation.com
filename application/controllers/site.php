@@ -38,7 +38,10 @@ class Site extends CI_Controller {
 
     public function player($player_name)
     {
+        $this->load->model('players_model', 'players');
+
         $this->data['player_name'] = $player_name;
+        $this->data['player'] = $this->players->get_by_name($player_name);
         $this->data['content'] = $this->load->view('pages/player', $this->data, True);
         $this->data['page_title'] = 'Player';
         $this->data['page_id'] = 'playerPage';
