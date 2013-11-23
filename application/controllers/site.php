@@ -8,9 +8,9 @@ class Site extends CI_Controller {
         $this->load->helper('url');
         $this->load->helper('html');
         $this->load->helper('debug');
+        $this->data = array();
         $this->data['page_id'] = 'homePage';
         $this->data['page_title'] = '';
-        $this->data = array();
     }
 
     public function index()
