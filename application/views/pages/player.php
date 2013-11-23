@@ -7,7 +7,7 @@
         
         <?php $this->load->view('include/mcInventory'); ?>
 
-        <?php echo var_dump($player); ?>
+        <?php echo var_chart($player); ?>
         
     </div>
 </section>

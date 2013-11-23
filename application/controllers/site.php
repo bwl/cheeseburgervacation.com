@@ -7,6 +7,7 @@ class Site extends CI_Controller {
         parent::__construct();
         $this->load->helper('url');
         $this->load->helper('html');
+        $this->load->helper('debug');
         $this->data['page_id'] = 'homePage';
         $this->data['page_title'] = '';
         $this->data = array();
