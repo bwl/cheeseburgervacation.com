@@ -17,7 +17,7 @@ function initialize_datatables() {
         "bAutoWidth": false,
         "bLengthChange": false,
         "bFilter": false,
-        "sDom": "<'row-fluid'<'span6'f><'span6'<'pull-right'T>>r>t",
+        "sDom": "<'row-fluid'<'span6'f><'span6'<'pull-right'T>>r>t"
     });
     new FixedHeader(table)
 }
