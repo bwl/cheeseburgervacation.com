@@ -7,10 +7,10 @@
     background: #c6c6c6;
     
     #itemTooltip {
-        border: 2px solid #1f004a;
-        border: 2px solid rgba(31,0,74,0.9);
-        background: rgba(27,0,27,0.9);
-        background: #1b0c1b;
+        border: 2px solid #1e0f1e;
+        border: 2px solid rgba(16,0,16,0.941);
+        background: #1e0f1e;
+        background: rgba(16,0,16,0.941);
         .clearfix;
         border-radius: 3px;
         display: none;
@@ -20,6 +20,8 @@
         > .inn {
             padding: 5px;
             .clearfix;
+            border: 2px solid #1e0f1e;
+            border: 2px solid rgba(37,0,95,0.961);
         }
         
         .line {
@@ -30,9 +32,15 @@
             .fontMCShadow;
             font-size: 16px;
             line-height: 16px;
+
+            &.goldenApple {
+                color: #5ff;
+                .textShadow(#153f3f);
+            }
             
-            &.bonus {
-                color: #55f;
+            &.enchantedApple {
+                color: #f5f;
+                .textShadow(#e3f153f);
             }
         }
     }
@@ -110,7 +118,7 @@
         .fontMCShadow;
         font-size: 16px;
         line-height: 16px;
-
+        cursor: default;
     }
     
     .hotbarSeparator {

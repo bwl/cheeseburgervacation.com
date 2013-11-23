@@ -103,8 +103,12 @@ section {
     -webkit-font-smoothing : none;
 }
 
+.textShadow(@color) {
+    text-shadow: 2px 2px 0px @color;
+    filter: dropshadow(color=@color, offx=2, offy=2);
+}
+
 .fontMCShadow() {
     .fontMC;
-    text-shadow: 2px 2px 0px #373737;
-    filter: dropshadow(color=#373737, offx=2, offy=2);
+    .textShadow(#373737);
 }
