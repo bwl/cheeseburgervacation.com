@@ -4,8 +4,6 @@
 <section id="players">
     <div class="inn">
         <?php echo heading($player_name,2)?>
-
-        <?php echo $player->Health; ?>
         
         <div class="playerMeters">
             <?php 
@@ -73,8 +71,9 @@
         </div>
         
         <?php $this->load->view('include/mcInventory'); ?>
-
-        <?php echo var_chart($player); ?>
+        
+        <?php echo 'Player: '.var_chart($player); ?>
+        <?php echo 'Items: '.var_chart($items); ?>
         
     </div>
 </section>
