@@ -72,6 +72,9 @@
         
         <?php $this->load->view('include/mcInventory'); ?>
         
+        <?php echo 'Armor: '.var_chart($armor); ?>
+        <?php echo 'Item1: '.$items['3:1']['name']; ?>
+        
         <?php echo 'Player: '.var_chart($player); ?>
         <?php echo 'Items: '.var_chart($items); ?>
         

@@ -3,7 +3,7 @@
 class Players_model extends CI_Model {
 
     public function __construct(){
-
+        
     }
 
     public function get_by_name($name){
@@ -13,11 +13,28 @@ class Players_model extends CI_Model {
 
     }
     
-    public function getInventory($name){
-        $items = file_get_contents(base_url().'asset/json/items.json');
-        // See http://stackoverflow.com/a/12884807 for explanation
-        $json = preg_replace('/,\s*([\]}])/m', '$1', utf8_encode($items));
-        return json_decode($json);
+    public function getActualInventory($name) {
+        
+    }
+    
+    public function getArmor($inventory) {
+        $armor = array();
+        foreach ($inventory as $item) {
+            
+            if ($item->Slot == 100) {
+                $armor['boots'] = array(7 => "fish");
+            }
+            if ($item->Slot  == 101) {
+                $armor['leggings'] = $item;
+            }
+            if ($item->Slot  == 102) {
+                $armor['chestplate'] = $item;
+            }
+            if ($item->Slot  == 103) {
+                $armor['helmet'] = $item;
+            }
+        }
+        return $armor;
     }
 
 }

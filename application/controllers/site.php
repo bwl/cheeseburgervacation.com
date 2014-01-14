@@ -67,6 +67,7 @@ class Site extends CI_Controller {
         $this->data['player_name'] = $player_name;
         $this->data['player'] = $this->players->get_by_name($player_name);
         $this->data['items'] = $this->inventory->getItems();
+        $this->data['armor'] = $this->players->getArmor($this->data['player']->Inventory);
         
         $this->data['content'] = $this->load->view('pages/player', $this->data, True);
         $this->data['page_title'] = 'Player';
